@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <script src="./JS/interactividade.js"></script>
+    <title>Jogo de Guerra</title>
+</head>
+<body>
+
+    <div class="welcome" id="welcome">
+        <img src="./IMG/fundo.jpg" alt="">
+        <div class="conteudp">
+            <h1>Seja Bem vindo ao jogo de Guerra</h1>
+            <h2>Elimine todos os inimigos para vencer!</h2>
+    
+            <h3>Digita o teu nome</h3>
+            <input type="text" name="" id="txtNome"> <br>
+            <button onclick="jogar()">Jogar</button>
+        </div>
+        
+    </div>
+
+    <div id="guid">
+        <input type="text" id="lblNome"> <br>
+        <label >Vida</label>
+        <input type="text" id="vida" value="50"> <br>
+        <!-- <label>Nº de Disparos</label> -->
+    </div>
+
+    <ul id="opcoes">
+        <h2>O jogo Terminou</h2>
+        <button onclick="recarregar()">Tentar Novamente</button>
+    </ul>
+
+    <div id="pausa">
+        <h2>Menu de Pausa</h2>
+        <button onclick="recarregar()">Recarregar</button>
+    </div>
+
+    <script src="JS/three.js"></script>
+	<script src="JS/Game.js"></script>
+	<script>
+        init();
+        animate();
+    </script>
+</body>
+</html>
